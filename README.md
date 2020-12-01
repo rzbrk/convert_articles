@@ -3,7 +3,7 @@
 Conversion tool for PerlPress static website generator to Nikola static
 website generator.
 
-##Introduction
+## Introduction
 
 This tool supports the conversion of website articles from PerlPress to
 Nikola for my personal website http://www.jan-grosser.de.
@@ -20,7 +20,7 @@ files for the articles like images or download files. The conversion tool scans
 the articles for those files, copies the files to a specific output folder and
 adapt the links/references in the outputted articles as needed for Nikola.
 
-##Command
+## Command
 
     ./convert.py [-s src-dir] [-o out-dir] database-file art-id-0 \
         [art-id-1 art-id-2 ...]
@@ -39,12 +39,12 @@ adapt the links/references in the outputted articles as needed for Nikola.
                     art_ids.txt), they can be provided to the conversion tool
                     via command line by $(cat art_ids.txt).
 
-##Examples
+## Examples
 
     ./convert.py -s ./source -o ./output jan-grosser.sqlite 1 2 3 4
     ./convert.py -s ./source -o ./output jan-grosser.sqlite $(cat art_ids.txt)
 
-##Dependencies
+## Dependencies
 
 The following dependencies apply:
 * Python 3
